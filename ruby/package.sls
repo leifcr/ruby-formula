@@ -15,7 +15,6 @@ ruby:
   pkg.installed:
     - names:
       - {{ ruby.package }}
-      - {{ ruby.package_bundler }}
       - ruby-switch
     - require:
       - pkgrepo: ruby_repo
@@ -31,6 +30,5 @@ ruby:
   pkg.installed:
     - names:
       - {{ ruby.package }}
-      - {{ ruby.package_bundler }}
 
 {% endif %}
